@@ -32,7 +32,7 @@ const Intro = () => {
           <h2>Hi There, I&#39;m</h2>
           <h1>Yifeng Zheng</h1>
           <h3>Aspiring Software <span ref={ textRef }></span></h3>
-          <div className="socialContainer">
+          <div className="social">
             <a href="https://www.facebook.com/yifeng.zheng.75/"><img src={ Facebook } alt="" /></a>
             <a href="https://www.instagram.com/yifeng.jpg/"><img src={ Instagram } alt="" /></a>
             <a href="https://www.linkedin.com/in/yifeng-zheng-247173142/"><img src={ LinkedIn } alt="" /></a>
