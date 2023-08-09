@@ -1,3 +1,82 @@
 .intro {
-    background-color: rgb(208, 135, 250);
+	background-color: white;
+	display: flex;
+
+	.left {
+		flex: 0.5;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.imgContainer {
+			width: 900px;
+			height: 900px;
+			overflow: hidden;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			background-color: rgb(180, 141, 234);
+			border-radius: 50%;
+			float: right;
+			img {
+				width: 90%;
+			}
+		}
+	}
+
+	.right {
+		flex: 0.5;
+		position: relative;
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			padding-left: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 30px;
+
+			h1 {
+				font-size: 80px;
+			}
+			h2 {
+				font-size: 55px;
+			}
+			h3 {
+				font-size: 50px;
+
+				span {
+					font-size: inherit;
+					color: crimson;
+				}
+
+				.ityped-cursor {
+					animation: blink 1s infinite;
+				}
+				@keyframes blink {
+					50% {
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+		}
+		a {
+			position: absolute;
+			bottom: 10px;
+			left: 45%;
+			img {
+				width: 60px;
+				animation: arrowBlink 3s infinite;
+			}
+
+			@keyframes arrowBlink {
+				100% {
+					opacity: 0;
+				}
+			}
+		}
+	}
 }
