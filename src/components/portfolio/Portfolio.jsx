@@ -56,7 +56,7 @@ const Portfolio = () => {
       <div className="container">
         { data.map( ( item ) => (
           <div className="item" key={ item.id }>
-            <img src={ item.img } alt="" />
+            <a href={ item.url }><img src={ item.img } alt="" /></a>
             <h3>{ item.title }</h3>
           </div>
         ) ) }
