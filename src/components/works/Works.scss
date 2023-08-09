@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .works {
 	background-color: rgb(88, 135, 168);
 	display: flex;
@@ -9,6 +11,10 @@
 		height: 80px;
 		position: absolute;
 		cursor: pointer;
+
+		@include mobile {
+			display: none;
+		}
 
 		&.left {
 			left: 100px;
@@ -26,6 +32,11 @@
 		left: 0;
 		transition: all 1s ease-out;
 
+		@include mobile {
+			height: 100vh;
+			flex-direction: column;
+			justify-content: center;
+		}
 		.container {
 			width: 100vw;
 			display: flex;
@@ -40,6 +51,12 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				
+				@include mobile {
+					width: 90%;
+					height: 220px;
+					margin: 10px 0;
+				}
 
 				.left {
 					flex: 4;
@@ -56,6 +73,11 @@
 						justify-content: space-between;
 						scrollbar-width: none; // for firefox
 
+						@include mobile {
+							height: 100%;
+							gap: 2px;
+						}
+
 						&::-webkit-scrollbar {
 							display: none;
 						}
@@ -69,21 +91,42 @@
 							justify-content: center;
 							img {
 								width: 36px;
+								height: 36px;
+							}
+
+							@include mobile {
+								width: 40px;
+								height: 40px;
+
+								img {
+									width: 30px;
+									height: 20px;
+								}
 							}
 						}
 
 						h2 {
 							font-size: 32px;
+							@include mobile {
+								font-size: 12px;
+							}
 						}
 						p {
 							font-size: 16px;
 							overflow: hidden;
+
+							@include mobile {
+								font-size: 8px;
+							}
 						}
 						span {
 							font-size: 14px;
 							font-weight: 800;
 							text-decoration: underline;
 							cursor: pointer;
+							@include mobile {
+								font-size: 8px;
+							}
 						}
 					}
 				}

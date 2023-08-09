@@ -13,23 +13,23 @@ const Works = () => {
     {
       id: "1",
       icon: Web,
-      title: "Web Design",
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam quasi. Ad, deleniti! Pariatur dignissimos molestias quod consequuntur aliquid enim odio voluptatibus adipisci beatae, corrupti doloremque voluptate, possimus sit accusantium.',
-      img: PandaChat,
+      title: "Aestimogram",
+      desc: 'A place where one can Rate, Post, and Discover captivating images of people in our community',
+      img: "/src/assets/landing-page.png",
     },
     {
       id: "2",
-      icon: Mobile,
-      title: "Mobile Application",
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam quasi. Ad, deleniti! Pariatur dignissimos molestias quod consequuntur aliquid enim odio voluptatibus adipisci beatae, corrupti doloremque voluptate, possimus sit accusantium.',
+      icon: Web,
+      title: "Panda Chat",
+      desc: 'A real-time chat application built using ReactJS and Firebase',
       img: PandaChat,
     },
     {
       id: "3",
       icon: Mobile,
-      title: "Featured",
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam quasi. Ad, deleniti! Pariatur dignissimos molestias quod consequuntur aliquid enim odio voluptatibus adipisci beatae, corrupti doloremque voluptate, possimus sit accusantium.',
-      img: PandaChat,
+      title: "Deer Diary",
+      desc: 'An Android application developed using Android Studios and Java to digitalize the traditional diary and include more privacy and security',
+      img: "/src/assets/deer_diary.png",
     },
   ]
 
@@ -54,7 +54,7 @@ const Works = () => {
                   <h2>{ item.title }</h2>
                   <p>{ item.desc }
                   </p>
-                  <span>Projects</span>
+                  <a href="https://github.com/yifzheng" style={ { textDecoration: "none", color: "black" } }><span>Projects</span></a>
                 </div>
               </div>
               <div className="right">
