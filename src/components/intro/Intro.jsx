@@ -1,6 +1,10 @@
 import './Intro.scss'
 import Profile from "../../assets/profile.png"
 import DownArrow from "../../assets/down-arrow.png"
+import Facebook from "../../assets/facebook.png"
+import Instagram from "../../assets/instagram.png"
+import LinkedIn from "../../assets/linkedin.png"
+import Github from "../../assets/github.png"
 import { init } from "ityped"
 import { useEffect, useRef } from 'react'
 
@@ -29,10 +33,10 @@ const Intro = () => {
           <h1>Yifeng Zheng</h1>
           <h3>Aspiring Software <span ref={ textRef }></span></h3>
           <div className="socialContainer">
-            <a href="https://www.facebook.com/yifeng.zheng.75/"><img src="/src/assets/facebook.png" alt="" /></a>
-            <a href="https://www.instagram.com/yifeng.jpg/"><img src="/src/assets/instagram.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/yifeng-zheng-247173142/"><img src="/src/assets/linkedin.png" alt="" /></a>
-            <a href="https://github.com/yifzheng"><img src="/src/assets/github.png" alt="" /></a>
+            <a href="https://www.facebook.com/yifeng.zheng.75/"><img src={ Facebook } alt="" /></a>
+            <a href="https://www.instagram.com/yifeng.jpg/"><img src={ Instagram } alt="" /></a>
+            <a href="https://www.linkedin.com/in/yifeng-zheng-247173142/"><img src={ LinkedIn } alt="" /></a>
+            <a href="https://github.com/yifzheng"><img src={ Github } alt="" /></a>
           </div>
         </div>
         <a className="portfolioLink" href="#portfolio">

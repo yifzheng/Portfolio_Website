@@ -2,6 +2,8 @@ import './Works.scss'
 import Mobile from "../../assets/mobile-development.png"
 import Web from "../../assets/web.png"
 import PandaChat from "../../assets/landing.png"
+import Aestimogram from "../../assets/landing-page.png"
+import DeerDiary from "../../assets/deer_diary.png"
 import Left from "../../assets/left-arrow.png"
 import Right from "../../assets/right-arrow.png"
 import { useState } from 'react'
@@ -15,7 +17,7 @@ const Works = () => {
       icon: Web,
       title: "Aestimogram",
       desc: 'A place where one can Rate, Post, and Discover captivating images of people in our community',
-      img: "/src/assets/landing-page.png",
+      img: Aestimogram,
     },
     {
       id: "2",
@@ -29,7 +31,7 @@ const Works = () => {
       icon: Mobile,
       title: "Deer Diary",
       desc: 'An Android application developed using Android Studios and Java to digitalize the traditional diary and include more privacy and security',
-      img: "/src/assets/deer_diary.png",
+      img: DeerDiary,
     },
   ]
 
