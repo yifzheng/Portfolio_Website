@@ -34,6 +34,10 @@
 				align-items: center;
 				flex-direction: row;
 
+				@include mobile {
+					display: none;
+				}
+
 				.icon {
 					font-size: 20px;
 					margin-right: 10px;

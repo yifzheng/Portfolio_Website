@@ -1,3 +1,100 @@
+@import "../../global.scss";
+
 .contact {
-	background-color: lightcyan;
+	background-color: white;
+	display: flex;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.left {
+		flex: 2;
+		overflow: hidden;
+		@include mobile {
+			flex: 1;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			@include mobile {
+				height: 300px;
+				width: 300px;
+			}
+		}
+	}
+	.right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include mobile {
+			flex: 2;
+		}
+		h2 {
+			font-size: 40px;
+			font-weight: 800;
+			@include mobile {
+				font-size: 30px;
+			}
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			width: 60%;
+			height: 60%;
+
+			@include mobile {
+				width: 99%;
+				height: 90%;
+			}
+
+			input {
+				width: 350px;
+				height: 40px;
+				padding: 0px 5px 0px 5px;
+				border-radius: 10px;
+				font-size: 16px;
+				@include mobile {
+					width: 90%;
+					font-size: 12px;
+				}
+			}
+
+			textarea {
+				width: 340px;
+				height: 200px;
+				font-size: 16px;
+				border-radius: 10px;
+				padding: 10px;
+				@include mobile {
+					width: 90%;
+					font-size: 12px;
+				}
+			}
+
+			button {
+				width: 200px;
+				height: 40px;
+				color: white;
+				background-color: crimson;
+				border: none;
+				border-radius: 10px;
+				font-size: 16px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			span {
+				font-size: 20px;
+				color: forestgreen;
+				font-weight: 600;
+			}
+		}
+	}
 }
