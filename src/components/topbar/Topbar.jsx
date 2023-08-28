@@ -8,9 +8,9 @@ const Topbar = ( { menuOpen, setMenuOpen } ) => {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className='logo'>yifzheng.</a>
-          <div className="itemContainer">
+          <div className={ `itemContainer ${menuOpen && 'active'}` }>
             <MailIcon className='icon' />
-            <span>yifengzheng.nyc@gmail.com</span>
+            <span className='email'>yifengzheng.nyc@gmail.com</span>
           </div>
         </div>
         <div className="right">

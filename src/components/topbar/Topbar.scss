@@ -8,7 +8,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 3;
-    transition: all 1s ease;
+	transition: all 1s ease;
 
 	.wrapper {
 		padding: 10px 30px;
@@ -47,6 +47,11 @@
 					font-size: 16px;
 					font-weight: 500;
 				}
+				&.active {
+					@include mobile {
+						display: flex; // Display on mobile when .active class is added
+					}
+				}
 			}
 		}
 
@@ -67,7 +72,7 @@
 					height: 5px;
 					background-color: $mainColor;
 					transform-origin: left;
-					transition: all 2s ease;
+					transition: all 1s ease;
 				}
 			}
 		}
@@ -90,6 +95,19 @@
 					background-color: snow;
 					transform: rotate(-50deg);
 				}
+			}
+		}
+
+		.itemContainer {
+			display: flex;
+			@include mobile {
+				display: flex;
+			}
+		}
+
+		@include mobile {
+			.logo {
+				display: none;
 			}
 		}
 	}
