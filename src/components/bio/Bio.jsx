@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./bio.scss"
 import PortfolioList from "../portfolioList/portfolioList"
 import portfolio from "../../assets/portfolio.jpg"
-import resumeFile from "../../assets/ZhengYifeng Resume.pdf"
+import resumeFile from "../../assets/ZhengYifengResume.pdf"
 import resumeImg from "../../assets/resume.png"
 
 const Bio = () => {
